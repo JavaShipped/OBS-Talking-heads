@@ -1,0 +1,50 @@
+li.voice-state:not([data-reactid*="THIS IS THE DISCORD ID OF THE PLAYER(KEEP THE QUOTES)"]) {
+  display: none;
+}
+.avatar {
+  content: url(PUT YOUR IMAGE LINK HERE);
+  padding-top: 50px;
+  height: auto !important;
+  width: auto !important;
+  border-radius: 0% !important;
+  filter: brightness(30%);
+  /*Change brightness to 100%, if you don’t want the image to dim*/
+}
+
+.speaking {
+  padding-top: 50px;
+  border-color: rgba(0, 0, 0, 0) !important;
+  position: relative;
+  animation-name: speak-now;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  filter: brightness(100%);
+  content: url(THIS IS WHERE YOUR SECOND LINK WOULD GO, BUT FOR ME ITS JUST THE SAME LINK AS ABOVE);
+}
+
+@keyframes speak-now {
+  0% {
+    bottom: 0px;
+  }
+  15% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 0px;
+  }
+}
+
+li.voice-state {
+  position: static;
+}
+div.user {
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
